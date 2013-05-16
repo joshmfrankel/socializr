@@ -11,3 +11,18 @@
  * @see  Twitteroauth https://github.com/abraham/twitteroauth for authentication details
  * @version 0.1
  */
+
+/**
+ * Wrap the plugin in the jquery dollar sign, which will prevent overriding other
+ * methods with the same name as this plugin.  Additionally we can call $ to
+ * reference jQuery
+ */
+(function($) {
+
+    // Register the plugin name as a function in jQuery
+    // Takes options parameter for overridding defaults
+    $.fn.socializr = function(options) {
+
+    }; // End Plugin
+
+})(jQuery);
